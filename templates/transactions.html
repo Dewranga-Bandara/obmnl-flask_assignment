@@ -64,6 +64,15 @@
                 </tr>
                 {% endfor %}
             </tbody>
+            <!-- Conditionally include total balance only for the /balance route -->
+            {% if total_balance is defined %}
+            <tfoot>
+                
+                    <strong>Total Balance: </strong>
+                    <strong>{{ total_balance }}</strong>
+                
+            </tfoot>
+            {% endif %}
         </table>
 
         <div class="d-flex justify-content-center">

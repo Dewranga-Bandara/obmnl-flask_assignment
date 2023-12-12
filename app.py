@@ -100,3 +100,5 @@ def total_balance():
 # Run the Flask app
 if __name__ == "__main__":
     app.run(debug=True)
+
+# app.run(debug=True, port=0)  port=0 :- Automatically select available port 
